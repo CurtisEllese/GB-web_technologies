@@ -10,10 +10,9 @@
 // Советую округлить значение после расчетов, так как в некоторых случаях может получиться "длинная дробь".
 
 function convertToFahrenheit(degree) {
-    res = (9 / 5) * degree + 32;
-    return res.toFixed(1);
+    return (9 / 5) * degree + 32;
 }
 
 const celsiusInput = Number.parseFloat(prompt("Введите температуру в градусах Цельсия: "));
-const result = +convertToFahrenheit(celsiusInput);
+const result = +convertToFahrenheit(celsiusInput).toFixed(1);
 alert(`Цельсий: ${celsiusInput}, Фаренгейт: ${result}`);
